@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="">
+            <div id="paymenttimer">
+                <div class="paymentbox">Total Item:<span id="itemshow">0</span> </div>
+                <div class="paymentbox" id="timmer">Time left: <span id="timer">120</span><span> S</span></div>
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing</h3>
+
+                    <div class="inputbox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Aditya Koul">
+                    </div>
+                    <div class="inputbox">
+                        <span>email :</span>
+                        <input type="email" placeholder="Atomicwarrior@gmail.com">
+                    </div>
+                    <div class="inputbox">
+                        <span>address :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    <div class="inputbox">
+                        <span>city :</span>
+                        <input type="text" placeholder="Pune">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>State :</span>
+                            <input type="text" placeholder="India">
+                        </div>
+                        <div class="inputbox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="12345">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputbox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_logos.png" alt="">
+                    </div>
+                    <div class="inputbox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="MR.Aditya Koul">
+                    </div>
+                    <div class="inputbox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-1234-9870-0000">
+                    </div>
+                    <div class="inputbox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="March">
+                    </div>
+                    <div class="flex">
+                        <div class="inputbox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2026">
+                        </div>
+                        <div class="inputbox">
+                            <span>cvv :</span>
+                            <input type="text" placeholder="2000">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+
+        </form>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

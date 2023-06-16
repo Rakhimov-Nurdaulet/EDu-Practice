@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .entry-button-group .bookmark:hover {
+            background-color: rgb(77, 77, 77);
+        }
+
+        .entry-titles div ion-icon:hover {
+            color: red;
+
+        }
+
+        #headline {
+
+            font-size: 1.6vw;
+        }
+
+        @media only screen and (max-width: 844px) {
+            #spansize {
+                font-size: 1.6vw;
+            }
+        }
+
+        .blog_main {
+
+            flex-direction: column;
+            overflow: scroll;
+            padding-bottom: 1px;
+            background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        nav::after {
+            background-color: transparent;
+        }
+
+        #spansiz {
+            color: green;
+            font-weight: 600;
+        }
+
+        .button_main {
+
+            height: 60px;
+
+            min-height: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bt_blog {
+            margin: 0.3rem;
+            padding: 0.5rem;
+            border: 2px solid black;
+            background-color: white;
+            font-weight: 500;
+            border-radius: 2px;
+        }
+
+        .bt_blog:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #dis_bt {
+            border-color: gray;
+        }
+
+        #dis_bt {
+            background-color: white;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <!--nav-->
+    <nav>
+        <a href="../index.html">
+            <ion-icon name="home-outline" class="navico"></ion-icon>
+        </a>
+        <a href="../index.html#blog">
+            <ion-icon name="document-text-outline" class="navico"></ion-icon>
+        </a>
+        <a href="../index.html#gallery" onclick="jj()">
+            <img src="../images/cart.png">
+            <span id="cart">0</span>
+        </a>
+        <a href="../index.html#gallery">
+            <ion-icon name="images-outline" class="navico"></ion-icon>
+        </a>
+        <a href="../index.html#contect" class="nav-contact" id="nav_contect">
+            <ion-icon name="at-outline" class="navico"></ion-icon>
+        </a>
+
+
+    </nav>
+
+    <!---->
+
+
+    <section class="blog_main">
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1598972428564-8dbf76afc2ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+        ">
+                <h1>#01</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Apple Unveils New MacBook Pro Lineup</h2>
+                <span id="spansize">March, 29th 2023 | 04.20 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 24K Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz">Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+
+        <!--Card 2-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+        ">
+                <h1>#02</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Tesla Announces Record Sales in Q1</h2>
+                <span id="spansize">March, 27th 2023 | 9.21 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 5K Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz">Business</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S2" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--3rd card-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        ">
+                <h1>#03</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Amazon to Launch Its Own Cryptocurrency</h2>
+                <span id="spansize">March, 23th 2023 | 4.00 AM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 998 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> Blockchain</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S3" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--4-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1601141586963-f213d2575b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80');
+        ">
+                <h1>#04</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Facebook Hit with Massive Data Breach</h2>
+                <span id="spansize">Febuary, 22th 2023 | 3.30 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 50 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> Hacking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S4" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--5-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1632239776255-0a7f24814df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+        ">
+                <h1>#05</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Microsoft Launches New Surface Laptop</h2>
+                <span id="spansize">Febuary, 15th 2023 | 6.10 AM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 256 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S5" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--6-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1612873346068-1d4b76372235?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80');
+        ">
+                <h1>#06</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Google Introduces AI-Powered Chatbot</h2>
+                <span id="spansize">Febuary, 10th 2023 | 10.00 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 154 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz">Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S6" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--7-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80');
+        ">
+                <h1>#07</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">AI Detects Cancer with High Accuracy</h2>
+                <span id="spansize">January, 25th 2023 | 1.00 AM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 854 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S7" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--8-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+        ">
+                <h1>#08</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Samsung Unveils Foldable Phone Prototype</h2>
+                <span id="spansize">January 15th 2023 | 8.40 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 223 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz">Technology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S8" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--9-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1617777934845-a818fd6e1bcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+        ">
+                <h1>#09</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">Zoom Rolls Out New Security Features</h2>
+                <span id="spansize">January, 10th 2023 | 06.35 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 243 Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> CyberSecurity</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S9" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+        <!--10-->
+        <div class="journal-entry__card">
+            <div class="entry-index" style="
+          background-image: url('https://images.unsplash.com/photo-1628126235206-5260b9ea6441?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+        ">
+                <h1>#10</h1>
+            </div>
+            <div class="entry-titles">
+                <h2 id="headline">SpaceX Launches First Private Mission</h2>
+                <span id="spansize">January, 2nd 2023 | 9.00 PM IST</span>
+
+                <div>
+                    <div class="entry-stats">
+                        <ion-icon name="heart-outline"></ion-icon><span id="spansize"> · 13K Likes </span>
+                    </div>
+                    <div class="entry-stats">
+                        <ion-icon name="time-outline"></ion-icon><span id="spansiz"> Science</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry-button-group">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <a href="data.html#S10" id="responsivebytt">Read More</a>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <div class="button_main">
+        <button class="bt_blog" disabled id="dis_bt">Prev</button>
+        <button class="bt_blog">1</button>
+        <button class="bt_blog">2</button>
+        <button class="bt_blog">3</button>
+        <button class="bt_blog">Next</button>
+    </div>
+
+
+</body>
+
+</html>

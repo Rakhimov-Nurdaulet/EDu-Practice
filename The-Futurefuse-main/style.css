@@ -1,0 +1,1351 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+
+/* -- Section Abhishek Kumar----------------------------------------------------------- --*/
+
+
+/* progress bar  --- Abhishek Kumar */
+
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    z-index: 5000;
+}
+
+.scroll-progress {
+    height: 100%;
+    background-color: #ff0000;
+}
+
+
+/*------------------------*/
+
+
+/* Hero section by Abhishek Kumar */
+
+
+.wishes{
+   width: fit-content;
+   
+    
+}
+
+#wishes2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.01rem red;
+   
+}
+
+.hero {
+    border: 2px solid black;
+    height: auto;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+}
+
+.sections {
+    height: auto;
+    width: 100%;
+    padding: 2.5%;
+    padding-left: 7.5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.hero_title {
+    font-family: "Lobster";
+    margin: 0;
+    font-size: 10vw;
+    text-shadow: 0.3rem 0.3rem rgba(255, 0, 0, 0.5);
+}
+
+.hero_subtitle {
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+.author {
+    margin: 0;
+    font-style: italic;
+    font-size: 1.3vw;
+}
+
+.herobtt {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.3vw;
+    border: 2px solid #f3f6fd;
+    background-color: rgba(243, 246, 253, 0.15);
+    outline-width: 0;
+    width: fit-content;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease-in;
+    color: #f3f6fd;
+    text-decoration: none;
+}
+
+.herobtt:hover {
+    box-shadow: inset 0px 0px 0px 50px rgba(243, 246, 253, 0.3);
+}
+
+.arrow {
+    margin-left: 20px;
+    font-size: 2vw;
+    transition: 0.25s ease-in;
+}
+
+.herobtt:hover .arrow {
+    transform: rotate(90deg);
+}
+
+
+/*  Hero -- second sec */
+
+#secondsec {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.pic {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pic:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.hero .pic:nth-child(2) {
+    grid-area: 1 / 3 / 3 / 6;
+}
+
+.hero .pic:nth-child(3) {
+    grid-area: 3 / 4 / 5 / 6;
+}
+
+.hero .pic:nth-child(4) {
+    grid-area: 3 / 1 / 5 / 4;
+}
+
+.pic img {
+    transition: 0.25s ease-out;
+    transition-delay: 0.25s;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic:nth-child(odd) img {
+    width: auto;
+    height: 100%;
+    border-radius: 0.75rem;
+    z-index: 0;
+}
+
+.pic:nth-child(even) img {
+    width: auto;
+    height: 100%;
+    border-radius: 0.75rem;
+    z-index: 0;
+}
+
+.pic::before {
+    -moz-box-shadow: inset 0 0 20px #ffffff;
+    -webkit-box-shadow: inset 0 0 20px #ffffff;
+    box-shadow: inset 0 0 10px #fffcfc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.pic .info_panel {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem;
+    z-index: 3;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+}
+
+.pic:hover img {
+    transform: scale(1.1) rotateZ(1deg);
+}
+
+.info-panel .info-sec__1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pic:hover .info-sec__1 span {
+    display: unset;
+    opacity: 1;
+    max-width: 500px;
+}
+
+.pic .info-panel {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem;
+    z-index: 3;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4rem;
+}
+
+.info-panel .info-sec__1 span {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+
+/* Media Quary for Hero Section */
+
+@media screen and (max-width: 860px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+    #firstSec {
+        height: fit-content;
+    }
+    .herobtt {
+        width: 10vw;
+        height: 0.8vh;
+        font-size: 0.3rem;
+    }
+    .arrow {
+        margin: 0;
+        font-size: 2vw;
+        transition: 0.25s ease-in;
+    }
+    .pic {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 30vh;
+        width: 40vw;
+    }
+    .hero .pic:nth-child(3) {
+        grid-area: 3 / 3 / 5 / 8;
+    }
+    #secondsec {
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .hero_title {
+        font-size: 20vw;
+    }
+    .hero_subtitle {
+        font-size: 6vw;
+    }
+    .author {
+        font-size: 4vw;
+    }
+}
+
+
+/*  Navigation Section By Abhisheek Kumar */
+
+nav {
+    position: fixed;
+    width: 4.5%;
+    height: 100%;
+    background: inherit;
+    overflow: hidden;
+    border-right: 1px solid rgba(243, 246, 253, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0 2.5% 0;
+    z-index: 1000;
+}
+
+nav::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 10%);
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+nav a {
+    background-color: #f3f6fd;
+    width: fit-content;
+    aspect-ratio: 1/1;
+    margin-bottom: 5rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    background-color: rgba(243, 246, 253, 0.15);
+    transition: 0.5s ease-in;
+    color: #f3f6fd;
+}
+
+nav img {
+    width: 32px;
+    height: 25px;
+}
+
+nav span {
+    position: fixed;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    font-size: 0.8rem;
+    border-radius: 2pc;
+    text-align: center;
+}
+
+
+/* Media query for Nav*/
+
+@media only screen and (max-width: 806px) {
+    nav {
+        width: 100%;
+        height: 10%;
+        min-height: 80px;
+        overflow: hidden;
+        border-top: 1px solid rgba(243, 246, 253, 0.25);
+        flex-direction: row;
+        justify-content: space-evenly;
+        bottom: 0;
+        padding: 0 4% 0 2.5%;
+        z-index: 9999;
+    }
+    .nav-cover {
+        display: none;
+    }
+    nav a {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav span {
+        position: fixed;
+        bottom: 4px;
+        border: 1px solid black;
+        background-color: red;
+        margin-bottom: 2px;
+    }
+    nav a.nav-contact {
+        margin-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    nav::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        box-shadow: unset;
+        filter: unset;
+        pointer-events: none;
+    }
+    nav::after {
+        box-shadow: unset;
+        filter: unset;
+        background-color: #000;
+        z-index: -1;
+    }
+    .info-panel .info-sec__1 span {
+        font-size: 0.5rem;
+    }
+}
+
+.navico {
+    height: 100%;
+    width: 2rem;
+}
+
+nav a:hover {
+    box-shadow: inset 0px 0px 0px 50px rgba(243, 246, 253, 0.3);
+}
+
+nav a .ion-icon {
+    font-size: 1.75rem;
+    display: block;
+}
+
+
+/*Scrol bar By Abhishek Kumar */
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10pc;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/*  Blog Section By Yuvraj Singh */
+
+@font-face {
+    font-family: "Virgil";
+    src: url("Virgil.woff2");
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+#display {
+    height: max-content;
+}
+
+.blog {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-image: url(images/blog-backround.png);
+    height: max-content;
+}
+
+
+/* Media querry for Blog */
+
+@media only screen and (max-width: 990px) {
+    .blog {
+        flex-wrap: wrap;
+    }
+    #responsivebytt {
+        padding: 2px;
+        font-size: 2.4vw;
+    }
+}
+
+.entry-titles span {
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .news-card {
+        flex-wrap: wrap;
+    }
+    .entry-button-group a {
+        background-color: red;
+    }
+    .entry-titles span {
+        font-size: 0.60rem;
+    }
+    .herobtt {
+        font-size: 0.1rem;
+    }
+}
+
+.blog .sections:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog h1 {
+    font-size: 3rem;
+}
+
+.article-tag {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    color: rgb(17, 17, 126) !important;
+}
+
+.blog .news-card {
+    width: 90%;
+    flex: 1;
+    box-shadow: 0 3px 1000px -1000px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.news-card {
+    display: flex;
+    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    background-color: #fff;
+    height: max-content;
+}
+
+.news-card .col {
+    height: 100%;
+    flex: 1;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.col h2 {
+    color: #222;
+}
+
+.col h2 a {
+    text-decoration: none;
+}
+
+.col span {
+    font-size: 0.75rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.col img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    flex: 1;
+    margin-bottom: 0.5rem;
+}
+
+.col article {
+    color: #222;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.col a {
+    margin-top: 0.5rem;
+    margin-bottom: 0.9rem;
+    text-decoration: underline;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+#samlink{
+    color: red;
+}
+
+.news-card .col:nth-child(1) article::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 0.65;
+    margin: 0.1em 0.1em 0.1em 0;
+    float: left;
+    color: #000;
+}
+
+.col .likes-comments {
+    width: 100%;
+    flex: 1;
+    margin-top: auto;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+.col:nth-child(1) {
+    padding-bottom: 1rem;
+}
+
+.likes-comments div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.likes-comments div ion-icon {
+    transition: 0.25s ease;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.likes-comments div span {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.like-icon {
+    color: black;
+}
+
+.likes-comments div:nth-child(1) ion-icon:hover {
+    color: red;
+}
+
+.liked {
+    color: red;
+}
+
+.sections .journal-entries {
+    width: 100%;
+    height: 100%;
+}
+
+#blog_heading {
+    color: black;
+}
+
+.comment:hover {
+    color: green;
+}
+
+.journal-entry__card {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 1000px -1000px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    transition: 0.1s ease;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.journal-entries h3 {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.journal-entries p {
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: red;
+}
+
+.entry-index {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: #000;
+    background-size: 100% auto;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.entry-index::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.25s ease;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+
+.entry-index h1 {
+    color: #f3f6fd;
+    z-index: 999;
+    transition: 0.25s ease;
+    transition-delay: 0.1s;
+    opacity: 0;
+}
+
+.journal-entry__card:hover {
+    transform: scale(1.025);
+}
+
+.journal-entry__card:hover .entry-index h1,
+.journal-entry__card:hover .entry-index::before {
+    opacity: 1;
+}
+
+.entry-titles {
+    height: 100%;
+    padding: 0.5rem 0 1rem 0.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-titles h2 {
+    font-size: 1.2rem;
+}
+
+.entry-titles div {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.entry-titles div ion-icon {
+    margin-right: 0.25rem;
+}
+
+.entry-titles div span {
+    margin-right: 0.25rem;
+}
+
+.entry-button-group {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.entry-button-group a {
+    display: flex;
+    font-weight: 500;
+    font-size: 0.85rem;
+    background-color: #000;
+    outline-width: 0;
+    border: none;
+    width: fit-content;
+    padding: 0.55rem 0.8rem;
+    white-space: pre;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.25s ease-in;
+    color: #f3f6fd;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.entry-button-group .bookmark {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+    user-select: none;
+}
+
+.entry-button-group .bookmark ion-icon {
+    color: #f3f6fd;
+    user-select: none;
+}
+
+
+/* -------------------Cat Section by Taskeen ------------------------------- */
+
+section {
+    min-height: 600px;
+    width: 100%;
+    padding: 2.5%;
+    padding-left: 7.5%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    color: aliceblue;
+}
+
+.gallery-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-box {
+    width: 300px;
+}
+
+.photo-title span {
+    font-size: 1rem;
+}
+
+.nav-cover {
+    width: 4.5%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.gallery h1 {
+    color: black;
+    font-size: 3rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.gallery-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.photo-box {
+    aspect-ratio: 1/1;
+    margin: 5px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    box-shadow: 0 3px 1000px -1000px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: #f3f6fd;
+    transition: 0.1s ease-in;
+}
+
+.more {
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    visibility: hidden;
+    width: 80%;
+    height: 45%;
+    color: black;
+    box-shadow: 1px 1px 2px 1px rgb(49, 47, 47);
+    display: flex;
+    border: 1px solid rgb(62, 58, 58);
+    display: flex;
+}
+
+.text-block {
+    height: 100%;
+    width: 60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-block h1 {
+    font-family: "Lobster";
+    font-size: 2.75rem;
+}
+
+.text-block p {
+    font-weight: 400;
+    width: 75%;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-block p b {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.text-block p {
+    margin: 2rem 0 0 0;
+    width: 95%;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.img-block {
+    width: 40%;
+}
+
+
+/* media querry for Cat */
+
+@media only screen and (max-width:806px) {
+    .img-block {
+        display: none;
+    }
+    #course-topic {
+        text-align: center;
+    }
+    .more {
+        height: max-content;
+    }
+    .text-block {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .text-block {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.img-block img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.close-snack {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    border: none;
+    outline-width: 0;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    color: white;
+}
+
+.close_logo {
+    display: block;
+    height: 60%;
+    width: 60%;
+}
+
+.close-snack ion-icon:hover {
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+}
+
+
+/* Course add */
+
+#addcourse {
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+#addcourse:hover {
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/* wikipedia */
+
+#snackLink {
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    margin: 20px;
+    display: flex;
+}
+
+#snackLink:hover {
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.go-to-wiki-asset {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.go-to-wiki span {
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.go-to-wiki ion-icon {
+    transition: 0.5s ease;
+    font-size: 1.2rem;
+}
+
+.go-to-wiki:hover {
+    border: 3.5px solid #000;
+    background-color: transparent;
+}
+
+.go-to-wiki:hover .go-to-wiki-asset {
+    color: #000;
+    text-decoration: none;
+    user-select: none;
+}
+
+.go-to-wiki:hover.go-to-wiki ion-icon {
+    transform: rotateY(180deg);
+}
+
+.photo-box:hover {
+    transform: scale(1.1) rotate(5deg);
+    z-index: 99;
+}
+
+.photo-box .photo {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: soft-light;
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+.photo a {
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: 0.25s ease;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+    border-radius: 5pc;
+}
+
+.photo:hover.photo::before {
+    opacity: 1;
+}
+
+.photo:hover.photo a {
+    opacity: 10;
+    transform: rotate(5deg);
+    z-index: 99;
+}
+
+.photo-box .photo img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.photo-box .photo:hover.photo img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.photo-title {
+    width: 100%;
+    flex: 1;
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-title span {
+    font-family: "virgil";
+    color: black;
+}
+
+
+/*Footer section By Aditya*/
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Poppins";
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.col a {
+    color: white;
+    text-decoration: none;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    color: white;
+}
+
+ul li:hover {
+    transform: translate(0.5rem);
+    transition-duration: 0.7s;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.col h1 {
+    margin-bottom: 1.0rem;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#fb:hover {
+    color: rgb(0, 76, 255);
+}
+
+#twit:hover {
+    color: rgb(0, 208, 255);
+}
+
+#insta:hover {
+    color: red;
+}
+
+#pin:hover {
+    color: red;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        bottom: unset;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+}
+
+
+/* tooltips -- By ABhishek Kumar --*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px 1px white;
+    background-position: center;
+    background-size: cover;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#abhishek {
+    background-image: url("images/abhishek.jpg");
+}
+
+#aditya {
+    background-image: url("images/aditya.JPG");
+}
+
+#taskeen {
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQGRwGtqKLEY_g/profile-displayphoto-shrink_800_800/0/1677141247566?e=1685577600&v=beta&t=B0hqWpY8_MsI3hI-HEnhuEWz5EaRGDuM4lG_ln2Sgzo");
+}
+
+#yuvraj {
+    background-image: url("images/yuvraj.jpeg");
+}
